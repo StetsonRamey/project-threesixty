@@ -17,13 +17,13 @@ $(document).ready(function() {
     event.preventDefault();
 
     // Giving the postCategorySelect a default value
-    // var status = $('#jobStatus').val();
     // if (status === '') {
     //   status = 'Queued';
     // }
 
     // Getting jQuery references to the post body, title, form, and category select
     var name = $('#jobName').val().trim();
+    var status = $('#jobStatus').val();
     var paint_cost = $('#paintPrice').val().trim();
     var wood_rot = $('#woodRotPrice').val().trim();
     var labor_actual = $('#actualLabor').val().trim();

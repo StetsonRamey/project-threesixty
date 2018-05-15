@@ -32,8 +32,8 @@ $(document).ready(function() {
     // Wont submit the post if we are missing a body or a title
     if (
       !name.val().trim() ||
-      !paint_cost.val().trim() ||
-      !wood_rot.val().trim()
+      !paint_cost ||
+      !wood_rot
     ) {
       return;
     }

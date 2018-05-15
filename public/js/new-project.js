@@ -23,7 +23,7 @@ $(document).ready(function() {
     // }
 
     // Getting jQuery references to the post body, title, form, and category select
-    var name = $('#jobName');
+    var name = $('#jobName').val().trim();
     var paint_cost = $('#paintPrice').val().trim();
     var wood_rot = $('#woodRotPrice').val().trim();
     var labor_actual = $('#actualLabor').val().trim();

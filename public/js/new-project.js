@@ -31,7 +31,7 @@ $(document).ready(function() {
     var job_total = parseInt(paint_cost) + parseInt(wood_rot);
     // Wont submit the post if we are missing a body or a title
     if (
-      !name.val().trim() ||
+      !name ||
       !paint_cost ||
       !wood_rot
     ) {

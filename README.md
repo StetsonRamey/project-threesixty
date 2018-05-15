@@ -5,7 +5,7 @@
 <a href="https://project-three-sixty.herokuapp.com/">Link</a>
 
 ### Screen Shots:
-
+![Alt Text](https://github.com/davidjemerson/project-threesixty/blob/master/public/img/p360%20demo.gif?raw=true)
 
 ### Technologies Used:
 <ul>

@@ -24,8 +24,8 @@ $(document).ready(function() {
 
     // Getting jQuery references to the post body, title, form, and category select
     var name = $('#jobName');
-    var paint_cost = $('#paintPrice');
-    var wood_rot = $('#woodRotPrice');
+    var paint_cost = $('#paintPrice').val().trim();
+    var wood_rot = $('#woodRotPrice').val().trim();
     var labor_actual = $('#actualLabor').val().trim();
     var material_actual = $('#actualMaterial').val().trim();
     var job_total = parseInt(paint_cost.val()) + parseInt(wood_rot.val());
@@ -39,10 +39,10 @@ $(document).ready(function() {
     }
     // Constructing a newPost object to hand to the database
     var newProject = {
-      name: name.val().trim(),
+      name: name,
       status: status,
-      paint_cost: parseInt(paint_cost.val().trim()),
-      wood_rot: wood_rot.val().trim(),
+      paint_cost: paint_cost,
+      wood_rot: wood_rot,
       labor_actual: labor_actual,
       material_actual: material_actual,
       job_total: job_total,

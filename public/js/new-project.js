@@ -28,7 +28,7 @@ $(document).ready(function() {
     var wood_rot = $('#woodRotPrice').val().trim();
     var labor_actual = $('#actualLabor').val().trim();
     var material_actual = $('#actualMaterial').val().trim();
-    var job_total = parseInt(paint_cost.val()) + parseInt(wood_rot.val());
+    var job_total = parseInt(paint_cost) + parseInt(wood_rot);
     // Wont submit the post if we are missing a body or a title
     if (
       !name.val().trim() ||

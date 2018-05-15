@@ -84,7 +84,7 @@ $(document).ready(function() {
     $.get('/api/projects/' + id, function(data) {
       if (data) {
         // If this post exists, prefill our cms forms with its data
-        name.val(data.name);
+        $('#jobName').val(data.name);
         status.val(data.status);
         paint_cost.val(data.paint_cost);
         wood_rot.val(data.wood_rot);

@@ -85,11 +85,11 @@ $(document).ready(function() {
       if (data) {
         // If this post exists, prefill our cms forms with its data
         $('#jobName').val(data.name);
-        status.val(data.status);
-        paint_cost.val(data.paint_cost);
-        wood_rot.val(data.wood_rot);
-        labor_actual.val(data.labor_actual);
-        material_actual.val(data.material_actual);
+        $('#jobStatus').val(data.status);
+        $('#paintPrice').val(data.paint_cost);
+        $('#woodRotPrice').val(data.wood_rot);
+        $('#actualLabor').val(data.labor_actual);
+        $('#actualMaterial').val(data.material_actual);
         // If we have a post with this id, set a flag for us to know to update the post
         // when we hit submit
         updating = true;
